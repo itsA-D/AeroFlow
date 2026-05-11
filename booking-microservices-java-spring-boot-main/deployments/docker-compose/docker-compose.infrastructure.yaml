@@ -1,10 +1,3 @@
-# ref: https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/examples/demo/docker-compose.yaml
-# ref: https://github.com/joaofbantunes/DotNetMicroservicesObservabilitySample/blob/main/docker-compose.yml
-# ref: https://github.com/oskardudycz/EventSourcing.NetCore/blob/main/docker-compose.yml
-# https://github.com/grafana/intro-to-mltp
-# https://stackoverflow.com/questions/65272764/ports-are-not-available-listen-tcp-0-0-0-0-50070-bind-an-attempt-was-made-to
-
-
 name: booking-microservices
 
 services:
@@ -133,10 +126,6 @@ services:
   #######################################################
   #  otel-collector 
   # https://opentelemetry.io/docs/collector/installation/
-  # https://github.com/open-telemetry/opentelemetry-collector
-  # https://github.com/open-telemetry/opentelemetry-collector-contrib
-  # we can use none contrib docker `otel/opentelemetry-collector` version from `https://github.com/open-telemetry/opentelemetry-collector` repository but,
-  # if we need more components like `elasticsearch` we should use `otel/opentelemetry-collector-contrib` image of `https://github.com/open-telemetry/opentelemetry-collector-contrib` repository.  
   #######################################################  
   otel-collector:
     image: otel/opentelemetry-collector-contrib:latest
@@ -211,7 +200,6 @@ services:
   # https://grafana.com/docs/grafana/latest/administration/provisioning/
   # https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/
   # https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/
-  # https://github.com/grafana/intro-to-mltp/blob/main/grafana/provisioning/datasources/datasources.yaml
   #######################################################   
   grafana:
     image: grafana/grafana:latest
@@ -240,10 +228,6 @@ services:
 
   #######################################################
   # tempo
-  # https://github.com/grafana/tempo/blob/main/example/docker-compose/otel-collector/docker-compose.yaml
-  # https://github.com/grafana/tempo/blob/main/example/docker-compose/shared
-  # https://github.com/grafana/tempo/blob/main/example/docker-compose/local
-  # https://github.com/grafana/tempo/tree/main/example/docker-compose
   #######################################################     
   tempo:
     image: grafana/tempo:latest
@@ -263,8 +247,6 @@ services:
   #######################################################
   # loki
   # https://grafana.com/docs/opentelemetry/collector/send-logs-to-loki/
-  # https://github.com/grafana/loki/blob/main/production/docker-compose.yaml
-  # https://github.com/grafana/loki/blob/main/examples/getting-started/docker-compose.yaml
   #######################################################
   loki:
     image: grafana/loki:latest

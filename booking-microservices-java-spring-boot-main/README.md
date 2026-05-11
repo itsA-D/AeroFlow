@@ -191,9 +191,3 @@ Thanks to all contributors, this project would not be possible without your help
 
 Please follow this [contribution guideline](./CONTRIBUTION.md) to submit a pull request or create the issue.
 
-## Project References & Credits
-
-- ContosoUniversityDotNetCore-Pages
-- modular-monolith-with-ddd
-- cqrs-is-simpler-with-java
-
