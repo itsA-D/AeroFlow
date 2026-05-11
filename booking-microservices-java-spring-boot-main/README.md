@@ -197,5 +197,3 @@ Please follow this [contribution guideline](./CONTRIBUTION.md) to submit a pull 
 - modular-monolith-with-ddd
 - cqrs-is-simpler-with-java
 
-## License
-This project is made available under the MIT license. See [LICENSE](./LICENSE) for details.
